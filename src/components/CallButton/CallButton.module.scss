@@ -1,0 +1,42 @@
+@use '../../scss/abstract/variables.scss' as *;
+
+.right {
+  max-width: 20%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.callButton {
+  width: 100%;
+  height: 100%;
+  background-color: $primary-color;
+  color: white;
+  border: 2px solid $primary-color;
+  border-radius: 50px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  &:hover {
+    background-color: $ligth-blue;
+    border: $ligth-blue;
+    transition: 300ms;
+  }
+}
+
+.phoneIcon {
+  color: white;
+  font-size: 16px;
+}
+.status {
+  color: white;
+  font-size: 0.9em;
+}
+
+.phoneNumber {
+  font-weight: normal;
+}

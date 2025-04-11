@@ -1,0 +1,13 @@
+// main.scss
+@use './abstract/variables' as *;
+@use './abstract/mixins' as *;
+@use './base/reset' as *;
+@use './base/typography' as *;
+@use './base/base' as *;
+@use './components/button' as *;
+@use './components/cards' as *;
+@use './layout/header' as *;
+@use './layout/footer' as *;
+
+
+

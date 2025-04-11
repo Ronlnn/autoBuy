@@ -1,0 +1,93 @@
+@use '../../scss/abstract/variables.scss' as *;
+.main {
+  padding: 20px;
+  max-width: 1450px;
+  width: 100%;
+  margin: 0;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.loading,
+.error,
+.empty {
+  text-align: center;
+  padding: 40px;
+  font-size: 1.2rem;
+}
+
+.error {
+  color: red;
+}
+
+.carsList {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.carCard {
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: transform 0.2s;
+  cursor: pointer;
+  width: 25rem;
+  background-color: $card-bg;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.carImage {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.carDetails {
+  padding: 15px;
+}
+
+.carSpecs {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+
+  li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: $card-text-second;
+    font-weight: 500;
+    span {
+      margin-right: 30px;
+    }
+  }
+  .carType {
+    color: $primary-color;
+  }
+  .carDate {
+    color: gray;
+  }
+  .carName {
+    font-weight: bold;
+    font-size: large;
+    color: $card-text-prime;
+  }
+  .carPrice {
+    font-weight: 700;
+    color: $card-text-prime;
+  }
+
+  .carCity {
+    margin-left: 5px;
+  }
+}
